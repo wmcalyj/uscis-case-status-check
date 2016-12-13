@@ -1,0 +1,7 @@
+# Please enter your receipt number below, just enter the number without other character
+# Any line starts with a ‘#’ will be considered as comment, hence, ignored
+# Example receipt number is like the following
+# YSC1790007418
+
+
+
