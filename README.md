@@ -18,3 +18,8 @@ You can put multiple numbers in number.txt, just make sure it's one number a lin
 
 To create a cronjob for this script, run cronjob.sh.
 This script will create a cronjob for the python script and all the output will be appeneded to cronjob.log.
+
+## WARNING
+
+Running cronjob.sh will erase all existing cronjobs in crontab and only create one cronjob for the python script.
+If you want to keep your eisting cronjobs, modify the cronjob.sh however you like
