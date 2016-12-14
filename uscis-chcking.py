@@ -1,9 +1,14 @@
 #!/usr/bin/env python
 import urllib
 import urllib2
+import datetime
+import time
 from bs4 import BeautifulSoup
 
+
 def readReceiptNumbers(filename):
+    time = datetime.datetime.now()
+    timeStr = time.strftime('%Y-%b-%d %H:%M:%S')
     f = open(filename, 'r')
     noNumber = True
     for line in f:
@@ -14,7 +19,8 @@ def readReceiptNumbers(filename):
             noNumber = False
             try:
                 status = getStatus(number)
-                print 'receipt number: [' + number + '], case status: [' + status + ']'
+                
+                print timeStr + ' -- receipt number: [' + number + '], case status: [' + status + ']'
             except AttributeError:
                 print 'Invalid receipt number: [' + number + '], please check your receipt number and try again'
     if noNumber:
