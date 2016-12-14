@@ -9,7 +9,7 @@ Once you have BeautifulSoup installed, following the steps below:
 For the first two steps, you only need to do them once.
 
 1. Enter your receipt number in number.txt
-2. run "chmod +x uscis-chcking.py" in your terminal
+2. run "chmod +x uscis-checking.py" in your terminal
 3. run "./uscis-checking.py" in your terminal and you can see your case status
 
 You can put multiple numbers in number.txt, just make sure it's one number a line.
