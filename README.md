@@ -13,3 +13,8 @@ For the first two steps, you only need to do them once.
 3. run "./uscis-checking.py" in your terminal and you can see your case status
 
 You can put multiple numbers in number.txt, just make sure it's one number a line.
+
+### Cronjob installation
+
+To create a cronjob for this script, run cronjob.sh.
+This script will create a cronjob for the python script and all the output will be appeneded to cronjob.log.
