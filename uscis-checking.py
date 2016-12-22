@@ -3,6 +3,7 @@ import urllib
 import urllib2
 import datetime
 import time
+import os
 from bs4 import BeautifulSoup
 
 
@@ -42,4 +43,9 @@ def getStatus(receiptNumber):
     content = contents[2].strip()
     return content
 
-readReceiptNumbers('number.txt')
+def runScript(filename):
+  filepath = os.path.dirname(os.path.realpath(__file__))
+  file = os.path.join(filepath, filename)
+  readReceiptNumbers(file)
+
+runScript('number.txt')
